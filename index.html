@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bansi Sanepara — Developer & Creator</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- INTRO -->
+<div id="intro">
+  <div class="intro-circle intro-circle-1"></div>
+  <div class="intro-circle intro-circle-2"></div>
+  <div class="intro-circle intro-circle-3"></div>
+  <div class="intro-grid"></div>
+  <div class="intro-center">
+    <div class="intro-pre">
+      <div class="intro-line"></div>
+      <span class="intro-code">Portfolio 2026</span>
+      <div class="intro-line"></div>
+    </div>
+    <div class="intro-name">Bansi <em>Sanepara</em></div>
+    <div class="intro-role">Developer &amp; Creator</div>
+    <div class="intro-loader-wrap">
+      <div class="intro-loader-track">
+        <div class="intro-loader-fill" id="loaderFill"></div>
+      </div>
+      <div class="intro-loader-pct" id="loaderPct">0%</div>
+    </div>
+    <button class="intro-btn" id="enterBtn" onclick="enterSite()">
+      Enter Portfolio
+      <div class="intro-btn-arrow">→</div>
+    </button>
+  </div>
+  <div class="intro-curtain" id="curtain">
+    <div class="intro-curtain-panel"></div>
+    <div class="intro-curtain-panel"></div>
+    <div class="intro-curtain-panel"></div>
+    <div class="intro-curtain-panel"></div>
+    <div class="intro-curtain-panel"></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">B·S</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-shape"></div>
+  <div class="hero-dots"></div>
+
+  <div class="hero-left">
+    <div class="hero-tag">
+      <span class="hero-tag-dot"></span>
+      Open to Internships
+    </div>
+    <h1>
+      <span class="line">Building</span>
+      <span class="line italic">thoughtful</span>
+      <span class="line">digital things</span>
+    </h1>
+    <p class="hero-desc">
+      I'm a <strong>CS student at Karnavati University</strong> passionate about crafting web experiences — from interactive OS visualizers to full-stack REST APIs. Co-founder of DigitalDrafts.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-dark">See Projects →</a>
+      <a href="#contact" class="btn btn-outline">Let's Talk</a>
+    </div>
+  </div>
+
+  <!-- RIGHT: photo + cards -->
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame" id="photoFrame">
+         <img src="Protofolio_photo.jpeg" alt="Bansi Sanepara" /> 
+      </div>
+      <div class="hero-photo-badge">📍 Ahmedabad, India</div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-icon ic-o">🎓</div>
+      <div>
+        <div class="hero-card-label">University</div>
+        <div class="hero-card-value">Karnavati University</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon ic-g">📈</div>
+      <div>
+        <div class="hero-card-label">CGPA</div>
+        <div class="hero-card-value">8.52 / 10</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon ic-p">💼</div>
+      <div>
+        <div class="hero-card-label">Experience</div>
+        <div class="hero-card-value">Intern · Co-Founder</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-mouse"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Full-Stack Development</span><span class="dot">✦</span>
+    <span>Node.js &amp; Express</span><span class="dot">✦</span>
+    <span>REST APIs</span><span class="dot">✦</span>
+    <span>MongoDB</span><span class="dot">✦</span>
+    <span>OS Visualizers</span><span class="dot">✦</span>
+    <span>Responsive Design</span><span class="dot">✦</span>
+    <span>Python &amp; JavaScript</span><span class="dot">✦</span>
+    <span>DigitalDrafts</span><span class="dot">✦</span>
+    <span>Full-Stack Development</span><span class="dot">✦</span>
+    <span>Node.js &amp; Express</span><span class="dot">✦</span>
+    <span>REST APIs</span><span class="dot">✦</span>
+    <span>MongoDB</span><span class="dot">✦</span>
+    <span>OS Visualizers</span><span class="dot">✦</span>
+    <span>Responsive Design</span><span class="dot">✦</span>
+    <span>Python &amp; JavaScript</span><span class="dot">✦</span>
+    <span>DigitalDrafts</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-blob"></div>
+  <div class="reveal">
+    <div class="section-eyebrow">// about me</div>
+    <div class="section-title">The mind behind<br/>the <em>craft</em></div>
+  </div>
+  <div class="about-grid">
+    <div>
+      <div class="about-text reveal">
+        <p>I'm <strong>Bansi Sanepara</strong>, a Computer Science student who loves building things that are both technically solid and visually delightful. I started with pure HTML/CSS, moved into JavaScript, and now I'm building full-stack apps with Node.js, Express, and MongoDB.</p>
+        <p>What excites me most is the intersection of <strong>CS fundamentals</strong> — algorithms, OS concepts, data structures — and their visual, real-world applications. That's why I built an interactive CPU Scheduling Visualizer that makes abstract theory tangible.</p>
+        <p>Beyond code, I co-founded <strong>DigitalDrafts</strong> — a creative digital services platform for content creators, managing everything from script writing to branding strategy.</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-card-top">
+          <div class="edu-uni-icon">🏛️</div>
+          <div>
+            <div class="edu-uni-name">Karnavati University</div>
+            <div class="edu-uni-detail">B.Sc. Computer Science · Gandhinagar, Gujarat</div>
+            <div class="edu-uni-detail" style="margin-top:.3rem;font-size:.75rem">Coursework: Data Structures, OS, DBMS, Web Development</div>
+          </div>
+        </div>
+        <div class="edu-cgpa-row">
+          <div>
+            <div class="edu-cgpa-num">8.52</div>
+            <div class="edu-cgpa-label">CGPA</div>
+          </div>
+          <div class="edu-year">2023 – 2027</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="stats-row">
+        <div class="stat-box"><div class="stat-box-num">4+</div><div class="stat-box-label">Projects built</div></div>
+        <div class="stat-box"><div class="stat-box-num">2</div><div class="stat-box-label">Certifications</div></div>
+        <div class="stat-box"><div class="stat-box-num">2 mo</div><div class="stat-box-label">Internship</div></div>
+        <div class="stat-box"><div class="stat-box-num">Co-F</div><div class="stat-box-label">DigitalDrafts</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="reveal">
+    <div class="section-eyebrow">// experience</div>
+    <div class="section-title">Where I've<br/><em>worked</em></div>
+  </div>
+  <div class="exp-grid">
+    <div class="exp-card reveal">
+      <div class="exp-card-tag">2025 · 2 Months</div>
+      <div class="exp-card-title">Web Developer Intern</div>
+      <div class="exp-card-company">Biokrom</div>
+      <ul class="exp-card-desc">
+        <li>Developed and maintained website components improving UI design and responsiveness</li>
+        <li>Built responsive pages using WordPress, HTML, CSS, and JavaScript across all devices</li>
+        <li>Collaborated with designers to implement features and enhance performance</li>
+        <li>Debugged, optimized page load times, and improved overall usability</li>
+      </ul>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-card-tag">2025 – Present</div>
+      <div class="exp-card-title">Co-Founder &amp; Content Creator</div>
+      <div class="exp-card-company">DigitalDrafts · Creative Digital Services</div>
+      <ul class="exp-card-desc">
+        <li>Co-founded platform for script writing, short-form video ideas &amp; thumbnail design</li>
+        <li>Developed content strategies to boost creator audience engagement</li>
+        <li>Collaborated with team to create high-quality content for digital platforms</li>
+        <li>Managed branding, content planning, and service delivery for online creators</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="skills-bg-pattern"></div>
+  <div class="reveal" style="position:relative;z-index:1">
+    <div class="section-eyebrow">// technical skills</div>
+    <div class="section-title">What I work<br/>with <em>daily</em></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-card-header"><span class="skill-card-emoji">⚡</span><span class="skill-card-name">Languages</span></div>
+      <div class="skill-tags"><span class="stag">Python</span><span class="stag">JavaScript</span><span class="stag">C</span><span class="stag">C++</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-header"><span class="skill-card-emoji">🎨</span><span class="skill-card-name">Frontend</span></div>
+      <div class="skill-tags"><span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">Bootstrap</span><span class="stag">WordPress</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-header"><span class="skill-card-emoji">🖥️</span><span class="skill-card-name">Backend</span></div>
+      <div class="skill-tags"><span class="stag">Node.js</span><span class="stag">Express.js</span><span class="stag">REST API</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-header"><span class="skill-card-emoji">🗄️</span><span class="skill-card-name">Database</span></div>
+      <div class="skill-tags"><span class="stag">MongoDB</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-header"><span class="skill-card-emoji">🛠️</span><span class="skill-card-name">Tools</span></div>
+      <div class="skill-tags"><span class="stag">Git</span><span class="stag">GitHub</span><span class="stag">Postman</span><span class="stag">VS Code</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-header"><span class="skill-card-emoji">💻</span><span class="skill-card-name">OS &amp; Systems</span></div>
+      <div class="skill-tags"><span class="stag">Linux</span><span class="stag">Windows</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="reveal">
+    <div class="section-eyebrow">// projects</div>
+    <div class="section-title">Things I've<br/><em>built &amp; shipped</em></div>
+  </div>
+  <div class="projects-list">
+    <div class="proj-item reveal">
+      <div class="proj-num">01</div>
+      <div>
+        <div class="proj-year">2025</div>
+        <div class="proj-name">CPU Scheduling &amp; Page Replacement Visualizer</div>
+        <div class="proj-desc">Interactive web app visualizing OS algorithms — FCFS, SJF, Round Robin, Priority Scheduling, FIFO, LRU and Optimal page replacement with execution timelines and turnaround time analysis.</div>
+        <div class="proj-stack"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+    <div class="proj-item reveal">
+      <div class="proj-num">02</div>
+      <div>
+        <div class="proj-year">2025</div>
+        <div class="proj-name">To-Do List Web Application</div>
+        <div class="proj-desc">Task manager with real-time DOM manipulation, local storage persistence across sessions, and a clean responsive interface for daily task tracking.</div>
+        <div class="proj-stack"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+    <div class="proj-item reveal">
+      <div class="proj-num">03</div>
+      <div>
+        <div class="proj-year">2025</div>
+        <div class="proj-name">Responsive Multi-page Website with Bootstrap</div>
+        <div class="proj-desc">Production-grade responsive site using Bootstrap's full component suite — navbar, carousel, cards, and grid system — optimized across mobile, tablet and desktop.</div>
+        <div class="proj-stack"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">Bootstrap</span><span class="ptag">JavaScript</span></div>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+    <div class="proj-item reveal">
+      <div class="proj-num">04</div>
+      <div>
+        <div class="proj-year">2026</div>
+        <div class="proj-name">Backend REST API Application</div>
+        <div class="proj-desc">Robust backend with Node.js &amp; Express.js handling full CRUD REST APIs, MongoDB integration, tested with Postman, with complete error handling throughout.</div>
+        <div class="proj-stack"><span class="ptag">Node.js</span><span class="ptag">Express.js</span><span class="ptag">MongoDB</span><span class="ptag">REST API</span></div>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section class="certs" id="certs">
+  <div class="reveal">
+    <div class="section-eyebrow">// certifications</div>
+    <div class="section-title">Recognition &amp;<br/><em>achievements</em></div>
+  </div>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon-box">🐍</div>
+      <div>
+        <div class="cert-name">100 Days of Python Programming</div>
+        <div class="cert-by">by Dr. Angela Yu — Comprehensive Python from fundamentals to advanced projects.</div>
+        <div class="cert-badge">✅ Certified</div>
+      </div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon-box">🌐</div>
+      <div>
+        <div class="cert-name">Full Stack Web Development Bootcamp</div>
+        <div class="cert-by">by Dr. Angela Yu — Complete web stack from HTML/CSS through Node.js and databases.</div>
+        <div class="cert-badge">✅ Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-glow"></div>
+  <div class="contact-inner">
+    <div class="section-eyebrow reveal">// contact</div>
+    <div class="section-title reveal">Let's build something<br/><em>great together</em></div>
+    <p class="contact-sub reveal">Looking for internships and creative collaborations. Whether you have a project, a question, or just want to say hello — I'm always happy to connect.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:bansisanepara0404@gmail.com" class="clink">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/bansi-sanepara-a304642b9/" class="clink">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/Bansi-Sanepara?tab=repositories" class="clink">
+        <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="#" class="clink">
+        <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M3 12h18M12 3a15 15 0 0 1 4 9 15 15 0 0 1-4 9 15 15 0 0 1-4-9 15 15 0 0 1 4-9z"/></svg>
+        Portfolio
+      </a>
+      <a href="BansiSanepara_resume.pdf" class="clink">
+        <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M3 12h18M12 3a15 15 0 0 1 4 9 15 15 0 0 1-4 9 15 15 0 0 1-4-9 15 15 0 0 1 4-9z"/></svg>
+        Resume
+      </a>
+      <a href="tel:+916352593979" class="clink">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.38 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 635 259 3979
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Bansi Sanepara</span>
+  <span>Designed &amp; built with ♥</span>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>
